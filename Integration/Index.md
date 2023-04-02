@@ -1,4 +1,5 @@
-![logo](images\DXC-logo)
+![logo](Images\DXC-logo.png) 
+
 
 Checks performed before pulling the CI information:
 
@@ -24,7 +25,7 @@ Steps performed to pull the CI Information:
 - Store Edge details in csv file
   
   
-![image](images/Picture3)
+![image](Images/Picture3.png)
 
   **Figure 4 - List of discovered Edges**
 
@@ -42,7 +43,7 @@ Benefits of Pulling data from CMDB+ instead of Aruba Orchestrator:
 
 To collect performance data for alerting, another PowerShell script, which will be residing on server (Integration Manager). Script connects to Aruba through Rest API, fetches the Edge Performance data and stores to CSV file. Script compares this data with Threshold CSV and determine severity of alert then post it to Platform X Event API.
 
-![logo](images\DXC-logo)
+![logo](images\DXC-logo.png)
 
 Navigate to /opt/tools/integration-manager/aruba/bin directory and execute the below script. 
 
@@ -144,7 +145,7 @@ o	creating incident for new alarm when alarm type is as specified in csv file
 -	Check if alarm log csv file exists 
 -	If alarm log file exists
 
-![logo](images\DXC-logo)
+![logo](images\DXC-logo.png)
 
 
 o	Check if alarm ID already exist in csv file
@@ -168,12 +169,12 @@ o	/opt/tools/integration-manager/aruba/Logs/_sdwan_aruba_active_alarms.log
 o	/opt/tools/integration-manager/aruba/conf/active_alarm_script_status.csv
 
 
-![image](images\Picture2)
+![image](images\Picture2.png)
 
 
 **Figure 5 - Alarm Logs**
 
-![logo](images\DXC-logo)
+![logo](images\DXC-logo.png)
 
 | Platform X Incident Fields |  Aruba Event Fields |
 :-------- | :------------------------ | 
@@ -215,7 +216,7 @@ o	Fetch orchestrator level closed alarms
 o	Check if alarm log csv file exists
 
 
-![logo](images\DXC-logo)
+![logo](images\DXC-logo.png)
 
 If exists:
 
@@ -234,7 +235,7 @@ o	Update the status of alarm in aruba_alarm_logs.csv file
 -	Incident created in ServiceNow
 
 
-![](images\Picture1)
+![](images\Picture1.png)
 
 **Figure 6 – ServiceNow Incident for Tunnel Down [from DevQA environment]**
 
@@ -247,11 +248,11 @@ This script is scheduled via cron job which will trigger the script every **5 mi
 ```
 pwsh sdwan_aruba_metrics.ps1
 ```
-![logo](images\DXC-logo)
+![logo](images\DXC-logo.png)
 
 
-![image](images\Picture4)
-![image](images\Picture5)
+![image](images\Picture4.png)
+![image](images\Picture5.png)
 
 
 
