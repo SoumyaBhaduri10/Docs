@@ -1,4 +1,4 @@
-![logo](images\DXC-logo)
+![](images\DXC-logo)
 
 Checks performed before pulling the CI information:
 
